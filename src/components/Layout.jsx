@@ -1,7 +1,6 @@
-
 import { Link, Outlet } from "react-router-dom";
 
-function Layout() {
+function Layout({ favoritesCount }) {
   return (
     <div className="site-layout">
       <header className="site-header">
@@ -11,7 +10,10 @@ function Layout() {
 
         <nav className="site-nav">
           <Link to="/">Home</Link>
-          <Link to="/favorites">Favorites</Link>
+
+          <Link to="/favorites">
+            Favorites ({favoritesCount})
+          </Link>
         </nav>
       </header>
 
@@ -20,7 +22,10 @@ function Layout() {
       </main>
 
       <footer className="site-footer">
-        <p>Movie Browser | Learn React by building</p>
+        <p>
+          © {new Date().getFullYear()} Movie Browser.
+          Built with React.
+        </p>
       </footer>
     </div>
   );

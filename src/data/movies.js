@@ -65,7 +65,43 @@ const movies = [
       "https://image.tmdb.org/t/p/w500/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg",
     description:
       "A human explorer discovers the extraordinary world of Pandora."
-  }
+  },
+  {
+  id: 7,
+  title: "Coco",
+  year: 2017,
+  genre: "Animation",
+  rating: 8.4,
+  poster: "https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg",
+  description: "A young boy discovers the importance of family and music."
+},
+{
+  id: 8,
+  title: "Jurassic Park",
+  year: 1993,
+  genre: "Adventure",
+  rating: 8.2,
+  poster: "https://image.tmdb.org/t/p/w500/b1xCNnyrPebIc7EWNZIa6jhb1Ww.jpg",
+  description: "Scientists create a dinosaur theme park that takes an unexpected turn."
+},
+{
+  id: 9,
+  title: "Finding Nemo",
+  year: 2003,
+  genre: "Animation",
+  rating: 8.2,
+  poster: "https://image.tmdb.org/t/p/w500/eHuGQ10FUzK1mdOY69wF5pGgEf5.jpg",
+  description: "A father travels across the ocean searching for his missing son."
+},
+{
+  id: 10,
+  title: "Spider-Man: Into the Spider-Verse",
+  year: 2018,
+  genre: "Animation",
+  rating: 8.4,
+  poster: "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
+  description: "Miles Morales discovers a new world of Spider-Man heroes."
+}
 ];
 
 export default movies;

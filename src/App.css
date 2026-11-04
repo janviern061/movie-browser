@@ -343,3 +343,68 @@
 .movie-info h2 a:hover {
   color: #60a5fa;
 }
+/* Responsive design for tablets and phones */
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px;
+  }
+
+  .site-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .site-main {
+    padding: 20px 15px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .movie-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    align-items: center;
+  }
+
+  .site-logo {
+    font-size: 22px;
+  }
+
+  .site-nav {
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .movie-detail {
+    padding: 10px;
+  }
+
+  .detail-info h1 {
+    font-size: 24px;
+  }
+
+  .site-footer {
+    padding: 20px 12px;
+    text-align: center;
+  }
+}
