@@ -1,14 +1,31 @@
+import MovieCard from "../components/MovieCard";
 
-function Favorites() {
+function Favorites({ favorites, toggleFavorite }) {
   return (
-    <section className="simple-page">
-      <h1>My Favorites</h1>
-      <p>
-        Your favorite movies will appear here.
-      </p>
-      <p>
-        We will add favorite movie functionality in Step 7.
-      </p>
+    <section>
+      <h1>My Favorite Movies</h1>
+      <p>Here are the movies you have selected.</p>
+
+      {favorites.length > 0 ? (
+        <div className="movie-grid">
+          {favorites.map((movie) => (
+            <MovieCard
+              key={movie.id}
+              movie={movie}
+              favorites={favorites}
+              toggleFavorite={toggleFavorite}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="simple-page">
+          <h2>No Favorites Yet</h2>
+          <p>
+            You haven't added any movies to your favorites.
+          </p>
+          <p>Go to Home and select your favorite movies.</p>
+        </div>
+      )}
     </section>
   );
 }

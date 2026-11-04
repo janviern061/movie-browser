@@ -2,7 +2,7 @@ import { useState } from "react";
 import MovieCard from "../components/MovieCard";
 import movies from "../data/movies";
 
-function Home() {
+function Home({ favorites, toggleFavorite }) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredMovies = movies.filter((movie) =>
@@ -25,7 +25,12 @@ function Home() {
       <div className="movie-grid">
         {filteredMovies.length > 0 ? (
           filteredMovies.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
+            <MovieCard
+              key={movie.id}
+              movie={movie}
+              favorites={favorites}
+              toggleFavorite={toggleFavorite}
+            />
           ))
         ) : (
           <p className="no-results">
