@@ -6,8 +6,10 @@ const movies = [
     year: 2010,
     genre: "Sci-Fi",
     rating: 8.8,
-    poster: "https://placehold.co/300x450/222222/FFFFFF?text=Inception",
-    description: "A skilled thief enters people's dreams to steal secrets."
+    poster:
+      "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+    description:
+      "A skilled thief enters people's dreams to steal secrets."
   },
   {
     id: 2,
@@ -15,8 +17,10 @@ const movies = [
     year: 2014,
     genre: "Sci-Fi",
     rating: 8.7,
-    poster: "https://placehold.co/300x450/222222/FFFFFF?text=Interstellar",
-    description: "Explorers travel through space in search of a new home."
+    poster:
+      "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    description:
+      "Explorers travel through space to search for a new home."
   },
   {
     id: 3,
@@ -24,8 +28,10 @@ const movies = [
     year: 2008,
     genre: "Action",
     rating: 9.0,
-    poster: "https://placehold.co/300x450/222222/FFFFFF?text=Dark+Knight",
-    description: "Batman faces a dangerous criminal who threatens Gotham."
+    poster:
+      "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    description:
+      "Batman faces a dangerous criminal threatening Gotham City."
   },
   {
     id: 4,
@@ -33,8 +39,10 @@ const movies = [
     year: 2018,
     genre: "Action",
     rating: 7.3,
-    poster: "https://placehold.co/300x450/222222/FFFFFF?text=Black+Panther",
-    description: "A young king protects his nation and its people."
+    poster:
+      "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    description:
+      "A young king protects Wakanda and its people."
   },
   {
     id: 5,
@@ -42,8 +50,10 @@ const movies = [
     year: 1997,
     genre: "Romance",
     rating: 7.9,
-    poster: "https://placehold.co/300x450/222222/FFFFFF?text=Titanic",
-    description: "Two young people meet aboard a famous ocean liner."
+    poster:
+      "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    description:
+      "Two young people meet aboard a famous ocean liner."
   },
   {
     id: 6,
@@ -51,8 +61,10 @@ const movies = [
     year: 2009,
     genre: "Adventure",
     rating: 7.9,
-    poster: "https://placehold.co/300x450/222222/FFFFFF?text=Avatar",
-    description: "A human explorer discovers the world of Pandora."
+    poster:
+      "https://image.tmdb.org/t/p/w500/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg",
+    description:
+      "A human explorer discovers the extraordinary world of Pandora."
   }
 ];
 
